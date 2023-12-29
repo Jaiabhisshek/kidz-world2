@@ -1,178 +1,191 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
-
-* {
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: "Rubik", sans-serif;
-}
-
-.books {
-  max-width: 200px;
-}
-
-.games,
-.crafts {
-  max-width: 300px;
-}
-
-.flex {
-  display: flex;
-}
-
-.section-container {
-  flex-direction: column;
-  padding: 5%;
-}
-
-.space-between {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.space-evenly {
-  justify-content: space-evenly;
-}
-
-nav {
-  height: 50px;
-  width: 100%;
-}
-
-nav > div {
-  padding: 0% 5%;
-}
-
-nav img {
-  height: 30px;
-}
-
-#cart {
-  font-weight: bold;
-  align-items: center;
-  cursor: pointer;
-}
-
-header {
-  height: 500px;
-  width: 100%;
-  background-image: url("./assets/kw-background.png");
-  background-size: 100% 100%;
+.bg-section{
+  background-image: url("assets/kw-background.png");
+  width: 100vw;
+  height: 60vh;
+  background-size: cover;
+  padding: 100px 50px;
   color: white;
+  font-size: x-large;
 }
-
-.header-text {
-  flex-direction: column;
-  max-height: 100%;
-  max-width: 20%;
-  padding: 4% 5%;
+.top-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
 }
-
-header h1 {
-  font-size: 7vh;
-}
-
-header h5 {
-  font-size: 23px;
+.kidz-logo{
+  margin-left: 30px;
   margin-top: 20px;
 }
-
-.section {
-  margin: 4% 0%;
-}
-
-.button {
-  cursor: pointer;
-  background-color: #6095ff;
-  color: white;
-  padding: 7px;
-  border-radius: 4px;
-}
-
-.buy img {
-  width: 20px;
-  padding-left: 5px;
-}
-
-.buy {
-  margin-top: 15px;
-  padding-bottom: 50px;
-}
-
-footer {
-  /* max-height: 300px; */
-  background-image: url("http://i1.faceprep.in/prograd-junior/footer-bg.png");
-  background-size: 100% 100%;
-  color: white;
-  padding: 0% 5%;
-}
-
-footer img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-}
-
-#details {
-  flex-direction: column;
-  text-align: right;
-}
-
-h1,
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-}
-
-h4 {
-  color: grey;
-  font-weight: lighter;
-}
-
-h6 {
-  font-size: 17px;
-}
-
-.buy p {
+.bg-para{
+  padding-top: 20px;
   font-weight: bold;
   font-size: 20px;
 }
-
-h3,
-h2 {
+.book{
+  height: 230px;
+  width: 160px;
+}
+.heading{
+  margin-top: 90px;
+  margin-left: 50px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
-
-.container {
-  flex-wrap: wrap;
+.books-section{
+  display: flex;
+  margin-left: 50px;
+}
+.book-box{
+  margin-right: 80px;
+}
+.book-heading{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.book-para{
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.book-cost{
+  font-size: 14px;
+}
+.button-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.book-button{
+  background-color: blue;
+  border-radius: 8px;
+  border-width: 0;
+  height: 30px;
+  width: 70px;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 6px;
+  
+}
+button :hover{
+  cursor: pointer;
+}
+.cart{
+  height: 20px;
+  padding-top: 6px;
+  padding-left: 6px;
+}
+.games-section{
+  display: flex;
+  margin-left: 50px;
+}
+.game{
+  height: 200px;
+  width: 250px;
+}
+.crafts-section{
+  display: flex;
+  margin-left: 50px;
+}
+.book-box1{
+  margin-right: 115px;
+}
+.bottom-section{
+  background-color: black;
+  color: white;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.girl-img{
+  height: 150px;
+  border-radius: 50%;
+  width: 150px;
+  margin-top: 10px;
+}
+.right-text{
+  text-align: right;
+  padding-top: 60px;
+  padding-right: 20px;
+}
+.left-text{
+  padding-left: 30px;
+  padding-top: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-  header {
-    height: 200px;
-    font-size: 15px;
-    text-align: start;
+@media (max-width: 576px){
+  .kidz-logo{
+      height: 50px;
+      margin-left: 0;
+      width: 170px;
   }
-
-  header h1 {
-    font-size: 4vh;
+  .top-cart{
+      display: flex;
+      align-items: center;
   }
-
-  header h5 {
-    font-size: 15px;
+  .cart-res{
+      height: 40px;
+      margin-left: 20px;
+      margin-right: 10px;
   }
-
-  .header-text {
-    padding: 0% 60% 5% 5%;
+  .books-section{
+      flex-direction: column;
+      text-align: center;
   }
-
-  body {
-    text-align: center;
+  .book-button{
+      margin-right: 30px;
   }
-
-  .container {
-    justify-content: center;
+  .book-box{
+      margin-bottom: 25px;
+  }
+  .book-cost{
+      margin-left: 30px;
+  }
+  .games-section{
+      flex-direction: column;
+      text-align: center;
+  }
+  .book-box1{
+      margin-bottom: 25px;
+  }
+  .gh{
+      margin-left: 55px;
+  }
+  .gp{
+      margin-left: 55px;
+  }
+  .gc{
+      margin-left: 0px;
+  }
+  .gb{
+      margin-left: 140px;
+  }
+  .crafts-section{
+      flex-direction: column;
+      text-align: center;
+  }
+  .head-res{
+      margin-top: -210px;
+  }
+  .bg-section{
+      background-size: contain;
+      background-repeat: no-repeat;
+      font-size: 10px;
+      color: white;
+      padding: 30px;
+  }
+  .bg-para{
+      font-size: 10px;
+  }
+  .top-bg{
+      position: absolute;
+      top: 115px;
   }
 }
